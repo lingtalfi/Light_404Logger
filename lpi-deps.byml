@@ -1,14 +1,19 @@
 1.0.0: 
-    - Ling:Bat:1.292
-    - Ling:Light:0.69.17
-    - Ling:Light_Logger:1.11.4
+    - Ling:Bat:1.293+
+    - Ling:Light:0.69.18+
+    - Ling:Light_Logger:1.11.5+
 
 1.0.1: 
-    - Ling:Bat:1.292
-    - Ling:Light:0.69.17
-    - Ling:Light_Logger:1.11.4
+    - Ling:Bat:1.293+
+    - Ling:Light:0.69.18+
+    - Ling:Light_Logger:1.11.5+
 
 1.0.2: 
-    - Ling:Bat:1.293
-    - Ling:Light:0.69.18
-    - Ling:Light_Logger:1.11.4
+    - Ling:Bat:1.293+
+    - Ling:Light:0.69.18+
+    - Ling:Light_Logger:1.11.5+
+
+1.0.3: 
+    - Ling:Bat:1.308+
+    - Ling:Light:0.69.30+
+    - Ling:Light_Logger:1.11.5+
