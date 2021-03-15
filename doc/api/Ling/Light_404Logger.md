@@ -1,6 +1,6 @@
 Ling/Light_404Logger
 ================
-2019-12-12 --> 2021-03-05
+2019-12-12 --> 2021-03-15
 
 
 
@@ -14,7 +14,7 @@ Table of contents
     - [Light404LoggerListener::configure](https://github.com/lingtalfi/Light_404Logger/blob/master/doc/api/Ling/Light_404Logger/Logger/Light404LoggerListener/configure.md) &ndash; Configures this instance.
     - [Light404LoggerListener::listen](https://github.com/lingtalfi/Light_404Logger/blob/master/doc/api/Ling/Light_404Logger/Logger/Light404LoggerListener/listen.md) &ndash; Reacts to the given logger message in a specific way.
 - [Light404LoggerService](https://github.com/lingtalfi/Light_404Logger/blob/master/doc/api/Ling/Light_404Logger/Service/Light404LoggerService.md) &ndash; The Light404LoggerService class.
-    - [Light404LoggerService::onExceptionCaught](https://github.com/lingtalfi/Light_404Logger/blob/master/doc/api/Ling/Light_404Logger/Service/Light404LoggerService/onExceptionCaught.md) &ndash; The callable used to react to the [Light.on_unhandled_exception_caught event](https://github.com/lingtalfi/Light/blob/master/personal/mydoc/pages/events.md).
+    - [Light404LoggerService::onExceptionCaught](https://github.com/lingtalfi/Light_404Logger/blob/master/doc/api/Ling/Light_404Logger/Service/Light404LoggerService/onExceptionCaught.md) &ndash; The callable used to react to the [Ling.Light.on_unhandled_exception_caught event](https://github.com/lingtalfi/Light/blob/master/personal/mydoc/pages/events.md).
 
 
 Dependencies
