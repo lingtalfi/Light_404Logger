@@ -60,48 +60,48 @@ Here is an example of the service configuration:
 
 ```yaml
 _404_logger:
-  instance: Ling\Light_404Logger\Service\Light404LoggerService
+    instance: Ling\Light_404Logger\Service\Light404LoggerService
 
 
 # --------------------------------------
 # hooks
 # --------------------------------------
 $events.methods_collection:
-  -
-    method: registerListener
-    args:
-      events:
-        - Ling.Light.on_unhandled_exception_caught
-      listener:
-        instance: @service(_404_logger)
-        callable_method: onExceptionCaught
+    -
+        method: registerListener
+        args:
+            events:
+                - Ling.Light.on_unhandled_exception_caught
+            listener:
+                instance: @service(_404_logger)
+                callable_method: onExceptionCaught
 
 $logger.methods_collection:
-  -
-    method: addListener
-    args:
-      channels: "404"
-      listener:
-        instance: Ling\Light_404Logger\Logger\Light404LoggerListener
-        methods:
-          configure:
-            options:
-              file: ${app_dir}/log/404-assets.log
-              format: [{channel}]: {dateTime} -- {message}
-              expand_array: true
-              keepOnlyIf:
-                extension.inArray:
-                  - css
-                  - js
-                  - jpg
-                  - jpeg
-                  - gif
-                  - png
-                  - bmp
-                  - eot
-                  - ttf
-                  - ico
-                  - pdf
+    -
+        method: addListener
+        args:
+            channels: "404"
+            listener:
+                instance: Ling\Light_404Logger\Logger\Light404LoggerListener
+                methods:
+                    configure:
+                        options:
+                            file: ${app_dir}/log/404-assets.log
+                            format: [{channel}]: {dateTime} -- {message}
+                            expand_array: true
+                            keepOnlyIf:
+                                extension.inArray:
+                                    - css
+                                    - js
+                                    - jpg
+                                    - jpeg
+                                    - gif
+                                    - png
+                                    - bmp
+                                    - eot
+                                    - ttf
+                                    - ico
+                                    - pdf
 ```
 
 
@@ -110,6 +110,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.0.5 -- 2021-03-15
+
+    - fix README.md indentation typo in the service snippet 
+  
 - 1.0.4 -- 2021-03-15
 
     - update planet to adapt Ling.Light:0.70.0
