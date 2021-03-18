@@ -1,6 +1,6 @@
 Light_404Logger
 ===========
-2019-12-12 -> 2021-03-15
+2019-12-12 -> 2021-03-18
 
 
 
@@ -66,16 +66,6 @@ _404_logger:
 # --------------------------------------
 # hooks
 # --------------------------------------
-$events.methods_collection:
-    -
-        method: registerListener
-        args:
-            events:
-                - Ling.Light.on_unhandled_exception_caught
-            listener:
-                instance: @service(_404_logger)
-                callable_method: onExceptionCaught
-
 $logger.methods_collection:
     -
         method: addListener
@@ -109,6 +99,11 @@ $logger.methods_collection:
 
 History Log
 =============
+
+- 1.0.6 -- 2021-03-15
+
+    - switch to Ling.Light_Events' open registration system
+
 
 - 1.0.5 -- 2021-03-15
 

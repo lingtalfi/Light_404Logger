@@ -5,16 +5,6 @@ _404_logger:
 # --------------------------------------
 # hooks
 # --------------------------------------
-$events.methods_collection:
-    -
-        method: registerListener
-        args:
-            events:
-                - Ling.Light.on_unhandled_exception_caught
-            listener:
-                instance: @service(_404_logger)
-                callable_method: onExceptionCaught
-
 $logger.methods_collection:
     -
         method: addListener
