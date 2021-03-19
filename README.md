@@ -1,6 +1,6 @@
 Light_404Logger
 ===========
-2019-12-12 -> 2021-03-18
+2019-12-12 -> 2021-03-19
 
 
 
@@ -100,10 +100,13 @@ $logger.methods_collection:
 History Log
 =============
 
-- 1.0.6 -- 2021-03-15
+- 1.0.7 -- 2021-03-19
+
+    - fix open events now in the events directory
+  
+- 1.0.6 -- 2021-03-18
 
     - switch to Ling.Light_Events' open registration system
-
 
 - 1.0.5 -- 2021-03-15
 
