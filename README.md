@@ -1,6 +1,6 @@
 Light_404Logger
 ===========
-2019-12-12 -> 2021-03-19
+2019-12-12 -> 2021-03-22
 
 
 
@@ -100,6 +100,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.0.8 -- 2021-03-22
+
+    - adapt api to work with Ling.Light_Events:1.10.0
+  
 - 1.0.7 -- 2021-03-19
 
     - fix open events now in the events directory
