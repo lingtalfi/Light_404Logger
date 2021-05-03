@@ -1,3 +1,0 @@
-Ling.Light.on_unhandled_exception_caught:
-    - @_404_logger->onExceptionCaught(data, event)
-
