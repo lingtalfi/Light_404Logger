@@ -1,6 +1,6 @@
 Light_404Logger
 ===========
-2019-12-12 -> 2021-05-31
+2019-12-12 -> 2021-06-03
 
 
 
@@ -100,6 +100,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.0.15 -- 2021-06-03
+
+    - adapt api to work with Light_PlanetInstaller:2.0.4
+  
 - 1.0.14 -- 2021-05-31
 
     - Removing trailing plus in lpi-deps file (to work with Light_PlanetInstaller:2.0.0 api
