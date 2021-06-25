@@ -57,7 +57,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [Light404LoggerPlanetInstaller::undoInit2](https://github.com/lingtalfi/Light_404Logger/blob/master/Light_PlanetInstaller/Light404LoggerPlanetInstaller.php#L40-L49)
+See the source code for method [Light404LoggerPlanetInstaller::undoInit2](https://github.com/lingtalfi/Light_404Logger/blob/master/Light_PlanetInstaller/Light404LoggerPlanetInstaller.php#L49-L66)
 
 
 See Also

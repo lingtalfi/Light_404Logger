@@ -6,6 +6,7 @@ namespace Ling\Light_404Logger\Light_PlanetInstaller;
 
 use Ling\CliTools\Output\OutputInterface;
 use Ling\Light_Events\Helper\LightEventsHelper;
+use Ling\Light_Logger\Helper\LightLoggerHelper;
 use Ling\Light_PlanetInstaller\PlanetInstaller\LightBasePlanetInstaller;
 use Ling\Light_PlanetInstaller\PlanetInstaller\LightPlanetInstallerInit2HookInterface;
 
@@ -31,6 +32,14 @@ class Light404LoggerPlanetInstaller extends LightBasePlanetInstaller implements 
         $output->write("<success>ok.</success>" . PHP_EOL);
 
 
+        //--------------------------------------------
+        // logger
+        //--------------------------------------------
+        $output->write("$planetDotName: registering Ling.Light_Logger listeners to open system...");
+        LightLoggerHelper::copyListenersFromPluginToMaster($appDir, $planetDotName);
+        $output->write("<success>ok.</success>" . PHP_EOL);
+
+
     }
 
 
@@ -45,6 +54,14 @@ class Light404LoggerPlanetInstaller extends LightBasePlanetInstaller implements 
         //--------------------------------------------
         $output->write("$planetDotName: unregistering open events...");
         LightEventsHelper::unregisterOpenEventByPlanet($this->container, $planetDotName);
+        $output->write("<success>ok.</success>" . PHP_EOL);
+
+
+        //--------------------------------------------
+        // logger
+        //--------------------------------------------
+        $output->write("$planetDotName: unregistering Ling.Light_Logger listeners from open system...");
+        LightLoggerHelper::removeListenersFromMaster($appDir, $planetDotName);
         $output->write("<success>ok.</success>" . PHP_EOL);
     }
 

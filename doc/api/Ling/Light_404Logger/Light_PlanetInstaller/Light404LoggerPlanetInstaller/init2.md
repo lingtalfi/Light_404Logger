@@ -59,7 +59,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [Light404LoggerPlanetInstaller::init2](https://github.com/lingtalfi/Light_404Logger/blob/master/Light_PlanetInstaller/Light404LoggerPlanetInstaller.php#L23-L34)
+See the source code for method [Light404LoggerPlanetInstaller::init2](https://github.com/lingtalfi/Light_404Logger/blob/master/Light_PlanetInstaller/Light404LoggerPlanetInstaller.php#L24-L43)
 
 
 See Also

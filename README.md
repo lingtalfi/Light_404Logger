@@ -1,6 +1,6 @@
 Light_404Logger
 ===========
-2019-12-12 -> 2021-06-03
+2019-12-12 -> 2021-06-25
 
 
 
@@ -63,35 +63,7 @@ _404_logger:
     instance: Ling\Light_404Logger\Service\Light404LoggerService
 
 
-# --------------------------------------
-# hooks
-# --------------------------------------
-$logger.methods_collection:
-    -
-        method: addListener
-        args:
-            channels: "404"
-            listener:
-                instance: Ling\Light_404Logger\Logger\Light404LoggerListener
-                methods:
-                    configure:
-                        options:
-                            file: ${app_dir}/log/404-assets.log
-                            format: [{channel}]: {dateTime} -- {message}
-                            expand_array: true
-                            keepOnlyIf:
-                                extension.inArray:
-                                    - css
-                                    - js
-                                    - jpg
-                                    - jpeg
-                                    - gif
-                                    - png
-                                    - bmp
-                                    - eot
-                                    - ttf
-                                    - ico
-                                    - pdf
+
 ```
 
 
@@ -100,6 +72,10 @@ $logger.methods_collection:
 History Log
 =============
 
+- 1.0.16 -- 2021-06-25
+
+    - update api, now use Ling.Light_Logger open registration system
+  
 - 1.0.15 -- 2021-06-03
 
     - adapt api to work with Light_PlanetInstaller:2.0.4
