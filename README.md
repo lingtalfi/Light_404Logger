@@ -1,6 +1,6 @@
 Light_404Logger
 ===========
-2019-12-12 -> 2021-06-25
+2019-12-12 -> 2021-06-28
 
 
 
@@ -72,6 +72,10 @@ _404_logger:
 History Log
 =============
 
+- 1.0.17 -- 2021-06-28
+
+    - fix api wrong reference to Ling.Light_Logger
+  
 - 1.0.16 -- 2021-06-25
 
     - update api, now use Ling.Light_Logger open registration system
